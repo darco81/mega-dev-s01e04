@@ -30,6 +30,17 @@ Closing one, with the closing comment from AGENTS.md:
 gh issue close <n> -c "<closing comment>"
 ```
 
+## What every issue carries
+
+Agreed with the lane owner on 2026-10-29 (plan morning-digest). Step 4 needs no question while this holds.
+
+- First line: `Source: plan.md § <n>` (the section it comes from, e.g. `§ 2a`).
+- Label: `plan:<plan name>` from the plan's frontmatter, e.g. `plan:morning-digest`.
+- Sections: `## Scope` (from the plan, no new work), `## Done when` (the plan's line, word for word),
+  `## Blocked by` (`—` or `#n`, with what exactly it needs).
+- Close only when "Done when" holds, with the closing comment from AGENTS.md. A step that waits on
+  someone else (a review) stays open until they have done their part, even if your part is done.
+
 ## No `gh`
 
 Steps 1–4 hold either way. GitHub reachable another way (a connector, the REST API, the web UI):
